@@ -13,8 +13,9 @@ drop table if exists neogary.botcommand;
 create table neogary.botcommand (
   id int not null auto_increment,
   name varchar(32) not null,
-  description varchar(255),
+  description varchar(255) not null,
   permtier int not null,
+  module varchar(255) not null,
   primary key (id)
 );
 
