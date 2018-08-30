@@ -30,3 +30,13 @@ create table neogary.role (
   permtier int not null,
   primary key (id)
 );
+
+--
+-- messageblacklist
+--
+drop table if exists neogary.messageblacklist;
+create table neogary.messageblacklist (
+  id int not null auto_increment,
+  text varchar(255) not null,
+  primary key (id)
+);
